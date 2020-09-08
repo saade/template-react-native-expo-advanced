@@ -38,3 +38,6 @@ Abaixo segue o que foi utilizado na criação deste template:
 - [Prettier](https://prettier.io/) - O Prettier atualiza seu código automaticamente seguindo os padrões que você quiser toda vez salva o arquivo;
   - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) - Roda o Prettier como uma regra do ESLint;
   - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) - Desativa todas as regras que são desnecessárias ou que podem dar conflito com o Prettier;
+- [Husky](https://github.com/typicode/husky) - Husky evita que commits sejam feitos de maneira desorganizada.
+- [Commitlint](https://github.com/conventional-changelog/commitlint) - Padroniza mensagens de commit.
+- [Commitizen](https://github.com/commitizen/cz-cli) - Cli no formato pergunta-resposta para compor mensagem de commit.
