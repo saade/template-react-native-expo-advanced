@@ -5,7 +5,7 @@ import AppRoutes from './app.routes';
 import AuthRoutes from './auth.routes';
 
 const Routes = () => {
-  const { signedIn } = useSelector((state) => state.auth);
+  const { signedIn } = useSelector(state => state.auth);
 
   return signedIn ? <AppRoutes /> : <AuthRoutes />;
 };

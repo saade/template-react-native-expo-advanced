@@ -14,7 +14,7 @@ export function* signIn({ payload }) {
       {
         email,
         password,
-      }
+      },
     );
 
     console.log(data);

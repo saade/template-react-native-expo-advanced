@@ -7,7 +7,7 @@ import { signInRequest } from '~/store/modules/auth/actions';
 import { Container } from './styles';
 
 const SignIn = () => {
-  const { signedIn } = useSelector((state) => state.auth);
+  const { signedIn } = useSelector(state => state.auth);
   const dispatch = useDispatch();
 
   function doLogin() {
