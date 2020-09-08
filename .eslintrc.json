@@ -1,0 +1,69 @@
+{
+    "env": {
+        "es2021": true
+    },
+    "extends": [
+        "airbnb",
+        "prettier",
+        "prettier/react"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly",
+        "__DEV__": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "prettier",
+        "eslint-plugin-import-helpers"
+    ],
+    "rules": {
+        "prettier/prettier": "error",
+        "react/jsx-filename-extension": [
+        "warn",
+        {
+            "extensions": [".jsx", ".js"]
+        }
+        ],
+        "react/style-prop-object": [1, {
+            "allow": ["StatusBar"]
+        }],
+        "import-helpers/order-imports": [
+            "warn",
+            {
+                "newlinesBetween": "always",
+                "groups": [
+                    "/^reactotron/",
+                    "/^react/",
+                    "/@/",
+                    "/^expo/",
+                    "/^redux/",
+                    "module",
+                    ["parent", "sibling", "index"]
+                ],
+                "alphabetize": { "order": "asc", "ignoreCase": true }
+            }
+        ],
+        "no-use-before-define": "off",
+        "import/prefer-default-export": "off",
+        "react/state-in-constructor": "off",
+        "react/static-property-placement": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/prop-types": "off",
+        "no-param-reassign": "off",
+        "no-console": "off"
+    },
+    "settings": {
+        "import/resolver": {
+          "babel-plugin-root-import": { "rootPathSuffix": "src" }
+        }
+    }
+}
